@@ -31,7 +31,7 @@ class TestMathGame(unittest.TestCase):
                 operation, answer = calculate_numbers(n1,n2, operator)
                 self.assertEqual(problem, expected_problem)
                 self.assertEqual(answer, expected_answer)
-                pass
+        pass
 
 if __name__ == "__main__":
     unittest.main()
