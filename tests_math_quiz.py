@@ -15,8 +15,8 @@ class TestMathGame(unittest.TestCase):
 
     def test_random-arithmatic_Operator(self):
     """ test if the generated operated is one of the defined arithmetic operators """
-        arithmetic_Operators = {'+', '-', '*'}
-            self.assertTrue(arithmetic_Operator)
+        arithmetic_Operators = {random-arithmatic_Operator
+            self.assertIn(arithmetic_Operators, valid_Operators)
         pass
 
 
