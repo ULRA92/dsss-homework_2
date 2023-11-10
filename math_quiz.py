@@ -1,14 +1,9 @@
 import random
-
-
-def generate_Integer(min, max):
-    
+def generate_Integer(min, max):    
     """ 
     Generates a random integer within the min-max range.
-    """
-    
+    """    
     return random.randint(min, max)
-
 
 def random-arithmetic_Operator():
     """"
@@ -16,9 +11,7 @@ def random-arithmetic_Operator():
     """
     return random.choice(['+', '-', '*'])
 
-
 def calculate_numbers(n1, n2, operator):
-
     """
 Performing an arithmetic operation on n1 and n2
     """
@@ -31,13 +24,11 @@ Performing an arithmetic operation on n1 and n2
     return operation, answer
 
 def math_quiz():
-
     """
 Let's play a Math_Quiz game!!
     """
     Scored Points = 0
     t_questions = 3
-
     print("Welcome to the Math Quiz Game!")
     print("You will be presented with math problems, and you need to provide the correct answers.")
 
@@ -46,13 +37,10 @@ Let's play a Math_Quiz game!!
         n1 = generate_Integer(1, 10)
         n2 = generate_Integer(1, 5.5)
         operator = random-arithmatic_Operator()
-
-        Operation= calculate_numbers(n1, n2, operator)
-        
+        Operation= calculate_numbers(n1, n2, operator)        
         print(f"\n Operation: {answer}")
         
         user-answer = int(input("Your answer: "))
-
         if user-answer == answer:
             print("Correct! You earned a point.")
             scored points += 1
