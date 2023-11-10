@@ -10,9 +10,9 @@ def generate_Integer(min, max):
     return random.randint(min, max)
 
 
-def random-arithmatic_Operator():
+def random-arithmetic_Operator():
     """"
-    Generate some random arithmatic function or operation.
+    Generate some random arithmetic function or operation.
     """
     return random.choice(['+', '-', '*'])
 
@@ -20,7 +20,7 @@ def random-arithmatic_Operator():
 def calculate_numbers(n1, n2, operator):
 
     """
-Performing an arithmatic operation on n1 and n2
+Performing an arithmetic operation on n1 and n2
     """
     operation = f"{n1} {operator} {n2}"
     if operator == '+': 
