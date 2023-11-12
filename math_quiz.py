@@ -5,7 +5,7 @@ def generate_Integer(min, max):
     """    
     return random.randint(min, max)
 
-def random-arithmetic_Operator():
+def random_arithmetic_Operator():
     """"
     Generate some random arithmetic function or operation.
     """
@@ -27,7 +27,7 @@ def math_quiz():
     """
 Let's play a Math_Quiz game!!
     """
-    Scored Points = 0
+    ScoredPoints = 0
     t_questions = 3
     print("Welcome to the Math Quiz Game!")
     print("You will be presented with math problems, and you need to provide the correct answers.")
@@ -35,19 +35,23 @@ Let's play a Math_Quiz game!!
     for _ in range(t_questions):
         
         n1 = generate_Integer(1, 10)
-        n2 = generate_Integer(1, 5.5)
-        operator = random-arithmatic_Operator()
-        Operation= calculate_numbers(n1, n2, operator)        
-        print(f"\n Operation: {answer}")
+        n2 = generate_Integer(1, 5)
+        operator = random_arithmetic_Operator()
+        Operation,answer = calculate_numbers(n1, n2, operator)       
+        print(f"\n Operation: {Operation}")
         
-        user-answer = int(input("Your answer: "))
-        if user-answer == answer:
+        try:
+          useranswer = int(input("Your answer: "))
+        except ValueError:
+          useranswer = 0
+    
+        if useranswer == answer:
             print("Correct! You earned a point.")
-            scored points += 1
+            ScoredPoints += 1
         else:
             print(f"Wrong answer. The correct answer is {answer}.")
 
-    print(f"\nGame over! Your score is: {scored points}/{t_questions}")
+    print(f"\nGame over! Your score is: {ScoredPoints}/{t_questions}")
 
 if __name__ == "__main__":
     math_quiz()
